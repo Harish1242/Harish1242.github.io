@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", SFMono-Regular, monospace;
+  
+  --color-primary: #0B132B;
+  --color-charcoal: #1C2541;
+  --color-gold: #D4AF37;
+  --color-gold-light: #E8CC6A;
+  --color-gold-muted: #A8892A;
+  --color-navy: #0B132B;
+  --color-navy-dark: #070D1C;
+  --color-border-gold: rgba(212, 175, 55, 0.2);
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FDFDFD;
+  color: #1E293B;
+  overflow-x: hidden;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Interactive elements styles */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #0B132B 30%, #A8892A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 4px 20px -2px rgba(11, 19, 43, 0.03), 0 0 0 1px rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  background: #FFFFFF;
+}
+.gold-border-glow:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 10px 30px -4px rgba(11, 19, 43, 0.06), 0 0 12px rgba(212, 175, 55, 0.2);
+}
