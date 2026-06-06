@@ -1,0 +1,6 @@
+{
+  "name": "SAAR Holdings",
+  "description": "Premium UK strategic investment and operational management firm driving enterprise growth, governance, and technology-led retail integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
