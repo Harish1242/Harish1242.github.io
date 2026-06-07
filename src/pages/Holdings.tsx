@@ -423,10 +423,10 @@ export default function Holdings() {
                   <div className="inline-flex items-center gap-2 text-xs font-mono text-[#A8892A] uppercase font-bold tracking-widest">
                     <span>🛒</span> ACTIVE REGISTERED SUBSIDIARY
                   </div>
-                  <h2 className="font-serif text-3xl font-bold text-slate-950">
+                  <h2 className="font-serif text-3xl font-black text-slate-950">
                     {SAAR_CONVENIENCE_DATA.name}
                   </h2>
-                  <p className="text-xs text-slate-500 font-mono">
+                  <p className="text-sm text-slate-500 font-mono">
                     Company Registered No. <strong className="font-bold text-slate-950">{SAAR_CONVENIENCE_DATA.registration}</strong> · Siting Focus Core
                   </p>
                 </div>
@@ -434,8 +434,8 @@ export default function Holdings() {
                 {/* Grid Overview Info */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 leading-relaxed">
                   <div className="space-y-4">
-                    <h4 className="font-serif text-base font-bold text-[#A8892A]">Strategic Mission Brief:</h4>
-                    <p className="text-sm text-slate-800 font-light leading-relaxed">
+                    <h4 className="font-serif text-lg font-bold text-[#A8892A]">Strategic Mission Brief:</h4>
+                    <p className="text-base text-slate-800 font-light leading-relaxed">
                       {SAAR_CONVENIENCE_DATA.mission}
                     </p>
                     <p className="text-xs text-slate-600 italic">
@@ -504,30 +504,32 @@ export default function Holdings() {
                   <div className="absolute top-0 right-0 w-44 h-44 bg-[#FAF3E5] rounded-full blur-2xl pointer-events-none opacity-40"></div>
                   
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4 pb-4 border-b border-slate-150">
-                    <div className="flex items-center gap-2">
-                      <Cpu size={20} className="text-[#A8892A]" />
-                      <span className="text-sm font-mono text-[#A8892A] uppercase tracking-widest font-black block">
-                        SAAR-INT CENTRAL COGNITIVE SIMULATOR
-                      </span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="p-1.5 bg-[#FAF6EE] border border-[#A8892A]/35 text-[#A8892A]">
+                        <Cpu size={18} />
+                      </div>
+                      <h3 className="font-serif text-xl md:text-2xl font-black text-slate-950 tracking-tight">
+                        SAAR-INT Central Cognitive Simulator
+                      </h3>
                     </div>
-                    <div className="inline-flex gap-1.5 items-center px-2.5 py-1 bg-[#FAF6EE] border border-[#EAC282]/30 rounded-xs text-xs font-mono font-bold text-slate-700">
+                    <div className="inline-flex gap-1.5 items-center px-3 py-1 bg-[#FAF6EE] border border-[#EAC282]/30 rounded-xs text-xs font-mono font-bold text-slate-700">
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                       SYSTEM STATUS: ONLINE
                     </div>
                   </div>
                   
-                  <p className="text-xs md:text-sm text-slate-600 font-light leading-relaxed mb-8 text-left max-w-4xl">
+                  <p className="text-sm md:text-base text-slate-750 font-light leading-relaxed mb-8 text-left max-w-4xl">
                     See how physical inputs on SAAR server algorithms automatically modify price tags, regional demand, and last-mile carrier fees. Toggle physical environments, inventory metrics, and competition parameters below to watch each module optimize live.
                   </p>
 
                   <div className="flex flex-col gap-6 text-left w-full">
                     {/* Controls Panel - Full Width Modular Horizontal Sub-grid */}
                     <div className="w-full bg-[#FCFBF8] border border-slate-205 p-6 md:p-8 space-y-6">
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 pb-4">
-                        <span className="text-sm font-mono text-[#A8892A] font-extrabold uppercase tracking-widest flex items-center gap-1.5">
-                          ⚙️ LIVE SAAR-INT MODEL FLIGHT CONTROLS
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-150 pb-4">
+                        <span className="text-sm font-sans text-slate-950 font-extrabold uppercase tracking-wider flex items-center gap-1.5">
+                          Live SAAR-INT Model Controls
                         </span>
-                        <span className="text-[10px] font-mono text-slate-400 font-bold bg-[#FAF6EE] px-2 py-1 rounded-xs border border-[#EAC282]/30 inline-block">
+                        <span className="text-[10px] font-mono text-slate-500 font-bold bg-[#FAF6EE] px-2.5 py-1 rounded-xs border border-[#EAC282]/30 inline-block">
                           INPUT CONTROLS PANEL · ACTIVE SIMULATION
                         </span>
                       </div>

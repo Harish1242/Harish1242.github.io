@@ -113,10 +113,10 @@ export default function Inquiry() {
                       className="p-5 text-left border cursor-pointer transition-all duration-300 relative border-[#A8892A] bg-[#FAF9F5] shadow-xs"
                     >
                       {targetCompany === 'holdings' && (
-                        <div className="absolute top-4 right-4 w-4 h-4 rounded-full bg-[#A8892A] flex items-center justify-center text-white text-xs font-bold">✓</div>
+                        <div className="absolute top-4 right-4 w-4 h-4 rounded-full bg-[#A8892A] flex items-center justify-center text-white text-xs font-bold font-mono">✓</div>
                       )}
-                      <span className="block text-sm font-serif font-extrabold text-slate-950">⚖️ SAAR Holdings Ltd.</span>
-                      <span className="text-xs text-slate-700 block mt-1.5 font-light leading-snug">Parent acquisitions, strategic partnerships, M&amp;A consulting, and joint-ventures.</span>
+                      <span className="block text-base font-serif font-extrabold text-[#A8892A]">⚖️ SAAR Holdings Ltd.</span>
+                      <span className="text-sm text-slate-700 block mt-1.5 font-light leading-relaxed">Parent acquisitions, strategic partnerships, M&amp;A consulting, and joint-ventures.</span>
                     </button>
 
                     <button
@@ -125,13 +125,13 @@ export default function Inquiry() {
                         setTargetCompany('convenience');
                         setPurpose('leasing');
                       }}
-                      className="p-5 text-left border cursor-pointer transition-all duration-300 relative border-slate-200 hover:bg-slate-50"
+                      className="p-5 text-left border cursor-pointer transition-all duration-300 relative border-slate-205 hover:bg-slate-50"
                     >
                       {targetCompany === 'convenience' && (
-                        <div className="absolute top-4 right-4 w-4 h-4 rounded-full bg-[#A8892A] flex items-center justify-center text-white text-xs font-bold">✓</div>
+                        <div className="absolute top-4 right-4 w-4 h-4 rounded-full bg-[#A8892A] flex items-center justify-center text-white text-xs font-bold font-mono">✓</div>
                       )}
-                      <span className="block text-sm font-serif font-extrabold text-slate-950">🛒 SAAR Convenience Ltd.</span>
-                      <span className="text-xs text-slate-700 block mt-1.5 font-light leading-snug">High-street storefront leases, wholesale supply lines, and software licensing.</span>
+                      <span className="block text-base font-serif font-extrabold text-slate-950">🛒 SAAR Convenience Ltd.</span>
+                      <span className="text-sm text-slate-700 block mt-1.5 font-light leading-relaxed">High-street storefront leases, wholesale supply lines, and software licensing.</span>
                     </button>
                   </div>
                 </div>

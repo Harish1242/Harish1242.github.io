@@ -143,8 +143,8 @@ export default function Services() {
                   {getIconForService(serv.id, 16)}
                 </div>
 
-                <h3 className="font-serif text-lg font-bold mb-2 group-hover:text-[#A8892A] transition-colors">{serv.title}</h3>
-                <p className={`text-xs leading-relaxed font-light ${isActive ? 'text-slate-300' : 'text-slate-500'}`}>
+                <h3 className="font-serif text-xl font-black mb-2 group-hover:text-[#A8892A] transition-colors">{serv.title}</h3>
+                <p className={`text-sm leading-relaxed font-light ${isActive ? 'text-slate-200' : 'text-slate-600'}`}>
                   {serv.tagline}
                 </p>
 
@@ -180,10 +180,10 @@ export default function Services() {
             </div>
 
             <div className="space-y-4 text-left">
-              <h5 className="text-xs font-mono uppercase tracking-[0.15em] text-[#A8892A] font-extrabold">
+              <h5 className="text-xs font-mono uppercase tracking-[0.15em] text-[#A8892A] font-extrabold font-black">
                 MODEL OVERVIEW
               </h5>
-              <p className="text-slate-800 text-[0.95rem] leading-relaxed font-light">
+              <p className="text-slate-900 text-base md:text-lg leading-relaxed font-light">
                 {activeService.overview}
               </p>
             </div>
@@ -196,19 +196,19 @@ export default function Services() {
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {getStepsForService(activeService.id).map((step, sIdx) => (
-                  <div key={sIdx} className="bg-[#FAF9F5] border border-slate-200 p-5 relative group hover:border-[#A8892A]/40 transition-colors text-left">
-                    {/* Badge */}
-                    <span className="absolute top-4 right-4 font-mono text-xs font-extrabold text-[#A8892A] bg-[#A8892A]/10 px-2 py-0.5">
-                      {step.phase}
-                    </span>
-                    <div className="text-xs font-mono font-bold text-slate-400 mb-2">Step 0{sIdx + 1}</div>
-                    <h6 className="font-serif font-extrabold text-slate-900 text-sm mb-2 leading-snug">
-                      {step.title}
-                    </h6>
-                    <p className="text-xs text-slate-606 font-light leading-normal">
-                      {step.desc}
-                    </p>
-                  </div>
+                   <div key={sIdx} className="bg-[#FAF9F5] border border-slate-200 p-5 relative group hover:border-[#A8892A]/40 transition-colors text-left">
+                     {/* Badge */}
+                     <span className="absolute top-4 right-4 font-mono text-xs font-extrabold text-[#A8892A] bg-[#A8892A]/10 px-2 py-0.5">
+                       {step.phase}
+                     </span>
+                     <div className="text-xs font-mono font-bold text-slate-400 mb-2">Step 0{sIdx + 1}</div>
+                     <h6 className="font-serif font-extrabold text-[#A8892A] text-base mb-2 leading-snug">
+                       {step.title}
+                     </h6>
+                     <p className="text-sm text-slate-705 font-light leading-normal">
+                       {step.desc}
+                     </p>
+                   </div>
                 ))}
               </div>
             </div>
@@ -229,11 +229,11 @@ export default function Services() {
                       <div className="p-1.5 bg-[#FAF5EE] border border-slate-200 text-[#A8892A] group-hover:bg-slate-950 group-hover:text-white transition-colors mt-0.5">
                         <CheckCircle2 size={13} strokeWidth={3} />
                       </div>
-                      <div className="text-xs text-slate-700 leading-relaxed">
-                        <strong className="font-serif font-bold text-slate-900 block mb-0.5 uppercase tracking-wide">
+                      <div className="text-sm text-slate-705 leading-relaxed">
+                        <strong className="font-serif font-bold text-slate-900 block mb-0.5 uppercase tracking-wider text-[11px]">
                           {boldPart}
                         </strong>
-                        <span className="font-light text-slate-600">
+                        <span className="font-light text-slate-650">
                           {normalPart}
                         </span>
                       </div>
