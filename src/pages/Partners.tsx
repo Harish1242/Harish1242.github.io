@@ -191,7 +191,7 @@ export default function Partners() {
           </div>
           <div className="lg:col-span-4 flex items-center lg:justify-end">
             <a 
-              href="/inquiry" 
+              href="#inquiry" 
               className="w-full lg:w-auto px-8 py-4 bg-[#A8892A] hover:bg-[#8F7422] text-white text-sm font-bold uppercase tracking-widest block font-sans text-center transition-all duration-300 hover:shadow-md border border-[#8F7422]"
             >
               Request Partner Discussion

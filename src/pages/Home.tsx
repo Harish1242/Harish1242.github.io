@@ -319,7 +319,7 @@ export default function Home() {
 
             <div className="pt-6">
               <a 
-                href="/leadership" 
+                href="#leadership" 
                 className="inline-flex items-center text-xs font-bold text-[#A8892A] uppercase tracking-widest hover:translate-x-1.5 transition-all"
               >
                 Board Room Leadership Profiles 🏛️ <ArrowRight size={14} className="ml-2" />
@@ -386,19 +386,19 @@ export default function Home() {
                 step: "⚜️ 01",
                 title: "Operational Management",
                 desc: "Assuming full day-to-day command under tailored Management Service Covenants. You keep assets and secure stable yields, bypassing overhead bottlenecks.",
-                link: "/services?tab=operational-management"
+                link: "#services?tab=operational-management"
               },
               {
                 step: "⚜️ 02",
                 title: "Strategic Acquisitions",
                 desc: "Direct corporate purchases of distressed or undervalue commercial properties. Flexible deferred or baseline buyout deals with clean liability separations.",
-                link: "/services?tab=strategic-acquisitions"
+                link: "#services?tab=strategic-acquisitions"
               },
               {
                 step: "⚜️ 03",
                 title: "Business Services",
                 desc: "Project-based audits, food and layout modernizations, plus proprietary SAAR-INT automated shelf and delivery software integrations.",
-                link: "/services?tab=business-services"
+                link: "#services?tab=business-services"
               }
             ].map((p, idx) => (
               <div key={idx} className="bg-[#FAFBF9] border border-slate-205 p-8 flex flex-col justify-between shadow-xs hover:border-[#A8892A]/40 transition-all">
@@ -513,7 +513,7 @@ export default function Home() {
           </div>
  
           <a 
-            href="/partners" 
+            href="#partners" 
             className="inline-flex px-8 py-4 bg-[#A8892A] hover:bg-[#8F7422] text-[#FAF9F5] text-xs font-bold uppercase tracking-widest transition-all hover:translate-y-[-2px] border border-[#8F7422] shadow-md font-mono"
           >
             🤝 Review Strategic Partner Prospectus
